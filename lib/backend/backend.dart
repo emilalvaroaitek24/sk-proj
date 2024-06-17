@@ -12,6 +12,9 @@ import 'schema/transaction_categories_record.dart';
 import 'schema/budgets_record.dart';
 import 'schema/user_list_record.dart';
 import 'schema/budget_list_record.dart';
+import 'schema/seagames_record.dart';
+import 'schema/games_categories_record.dart';
+import 'schema/game_reviews_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -27,6 +30,9 @@ export 'schema/transaction_categories_record.dart';
 export 'schema/budgets_record.dart';
 export 'schema/user_list_record.dart';
 export 'schema/budget_list_record.dart';
+export 'schema/seagames_record.dart';
+export 'schema/games_categories_record.dart';
+export 'schema/game_reviews_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -282,6 +288,117 @@ Future<List<BudgetListRecord>> queryBudgetListRecordOnce({
     queryCollectionOnce(
       BudgetListRecord.collection,
       BudgetListRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query SeagamesRecords (as a Stream and as a Future).
+Future<int> querySeagamesRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      SeagamesRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<SeagamesRecord>> querySeagamesRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      SeagamesRecord.collection,
+      SeagamesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<SeagamesRecord>> querySeagamesRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      SeagamesRecord.collection,
+      SeagamesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query GamesCategoriesRecords (as a Stream and as a Future).
+Future<int> queryGamesCategoriesRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      GamesCategoriesRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<GamesCategoriesRecord>> queryGamesCategoriesRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      GamesCategoriesRecord.collection,
+      GamesCategoriesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<GamesCategoriesRecord>> queryGamesCategoriesRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      GamesCategoriesRecord.collection,
+      GamesCategoriesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query GameReviewsRecords (as a Stream and as a Future).
+Future<int> queryGameReviewsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      GameReviewsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<GameReviewsRecord>> queryGameReviewsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      GameReviewsRecord.collection,
+      GameReviewsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<GameReviewsRecord>> queryGameReviewsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      GameReviewsRecord.collection,
+      GameReviewsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

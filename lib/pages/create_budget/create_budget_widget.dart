@@ -132,7 +132,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              'smbfunwu' /* Create Budget */,
+                              'smbfunwu' /* Create Bet */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
@@ -278,7 +278,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'onjddqdc' /* Budget Name */,
+                              'onjddqdc' /* Game Title */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .titleMedium
@@ -500,7 +500,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                               context.pop();
                             },
                             text: FFLocalizations.of(context).getText(
-                              '0iex13x2' /* Create Budget */,
+                              '0iex13x2' /* Create Bet */,
                             ),
                             options: FFButtonOptions(
                               width: 300.0,
@@ -544,7 +544,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                    color: const Color(0x43000000),
+                    color: FlutterFlowTheme.of(context).primaryText,
                     letterSpacing: 0.0,
                     useGoogleFonts: GoogleFonts.asMap().containsKey(
                         FlutterFlowTheme.of(context).bodyMediumFamily),

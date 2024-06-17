@@ -50,7 +50,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).errorRed,
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -66,7 +66,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
         final budgetDELETEBudgetsRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).errorRed,
+          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           body: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -85,7 +85,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: MediaQuery.sizeOf(context).height * 0.8,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: FlutterFlowTheme.of(context).primary,
                     borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(16.0),
                       bottomRight: Radius.circular(16.0),
@@ -142,7 +142,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                               0.0, 16.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'pozov0xz' /* Delete Budget */,
+                              'pozov0xz' /* Delete Receipt */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
@@ -166,7 +166,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                               Expanded(
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'aptjmof0' /* If you delete this budget, you... */,
+                                    'aptjmof0' /* If you delete this receipt, yo... */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -259,7 +259,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 );
                               },
                               text: FFLocalizations.of(context).getText(
-                                '9l7pbjcj' /* Delete Budget */,
+                                '9l7pbjcj' /* Delete Receipt */,
                               ),
                               options: FFButtonOptions(
                                 width: 300.0,
@@ -268,7 +268,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                     0.0, 0.0, 0.0, 0.0),
                                 iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: FlutterFlowTheme.of(context).errorRed,
+                                color: FlutterFlowTheme.of(context).secondary,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .displaySmall
                                     .override(
@@ -303,7 +303,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                      color: const Color(0x43000000),
+                      color: FlutterFlowTheme.of(context).primaryText,
                       letterSpacing: 0.0,
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
                           FlutterFlowTheme.of(context).bodyMediumFamily),

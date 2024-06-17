@@ -51,8 +51,7 @@ class _PanyerWidgetState extends State<PanyerWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: FlutterFlowWebView(
-                content:
-                    'https://vapi.ai?demo=true&shareKey=7bf0d89e-3ad2-4234-bc8b-f7e7c7739494&assistantId=10867e90-85d0-4006-80a4-2d765eb12e27',
+                content: 'https://boses.panyero.online/',
                 bypass: false,
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: MediaQuery.sizeOf(context).height * 1.0,

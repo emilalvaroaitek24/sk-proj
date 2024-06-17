@@ -394,7 +394,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                  color: const Color(0x43000000),
+                  color: FlutterFlowTheme.of(context).primaryText,
                   letterSpacing: 0.0,
                   useGoogleFonts: GoogleFonts.asMap().containsKey(
                       FlutterFlowTheme.of(context).bodyMediumFamily),

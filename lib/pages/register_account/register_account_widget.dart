@@ -489,6 +489,13 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       return;
                                     }
 
+                                    await UsersRecord.collection
+                                        .doc(user.uid)
+                                        .update(createUsersRecordData(
+                                          ownedPersona:
+                                              'https://boses.panyero.online/',
+                                        ));
+
                                     await BudgetListRecord.collection
                                         .doc()
                                         .set(createBudgetListRecordData(

@@ -45,3 +45,5 @@ export '/pages/budget_d_e_l_e_t_e/budget_d_e_l_e_t_e_widget.dart'
 export '/pages/profilepage/profilepage_widget.dart' show ProfilepageWidget;
 export '/admin/admin_widget.dart' show AdminWidget;
 export '/panyer/panyer_widget.dart' show PanyerWidget;
+export '/gdetails/gdetails_widget.dart' show GdetailsWidget;
+export '/web_interface/web_interface_widget.dart' show WebInterfaceWidget;

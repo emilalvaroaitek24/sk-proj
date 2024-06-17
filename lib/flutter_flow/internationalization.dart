@@ -390,14 +390,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // onboarding
   {
     'i8hl2uua': {
-      'en': 'Create Budgets',
+      'en': 'Create Bets',
       'ar': 'إنشاء الميزانيات',
       'de': 'Erstellen Sie Budgets',
       'es': 'Crear presupuestos',
     },
     'hxtwax0y': {
       'en':
-          'Create budgets that you can tie transactions too in order for easy tracking.',
+          'Create bets that you can tie transactions too in order for easy tracking.',
       'ar':
           'قم بإنشاء ميزانيات يمكنك ربط المعاملات بها أيضًا من أجل التتبع السهل.',
       'de':
@@ -433,7 +433,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Sepa dónde están sus presupuestos y cómo se pueden ajustar.',
     },
     'ypt7b97g': {
-      'en': 'Create Your Budget',
+      'en': 'Create Your bets',
       'ar': 'إنشاء ميزانيتك',
       'de': 'Erstellen Sie Ihr Budget',
       'es': 'Crea tu presupuesto',
@@ -498,14 +498,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // MY_Card
   {
-    'xn2so8km': {
-      'en': 'Play Time',
-      'ar': 'بطاقتي',
-      'de': 'Meine Karte',
-      'es': 'Mi tarjeta',
-    },
     '6t7n9ugd': {
-      'en': 'Balance',
+      'en': 'Panyero Balance',
       'ar': 'الرصيد',
       'de': 'Gleichgewicht',
       'es': 'Equilibrio',
@@ -566,42 +560,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'w6z7fn3u': {
       'en': 'Live',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'us0cgo4g': {
-      'en': 'Basketball',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'mw5gfbdt': {
-      'en': 'Ginebra vs Magnolia',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'eygnrckq': {
-      'en': 'FiFa Live',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'aoue0c4u': {
-      'en': 'Bets Open Now',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'azwi1igq': {
-      'en': 'First 2Digit',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    '77o34xjj': {
-      'en': 'Bets Open Now',
       'ar': '',
       'de': '',
       'es': '',
@@ -1169,7 +1127,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // createBudget
   {
     'smbfunwu': {
-      'en': 'Create Budget',
+      'en': 'Create Bet',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
@@ -1181,7 +1139,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Monto',
     },
     'onjddqdc': {
-      'en': 'Budget Name',
+      'en': 'Game Title',
       'ar': 'اسم الميزانية',
       'de': 'Budgetname',
       'es': 'Nombre del presupuesto',
@@ -1193,7 +1151,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Descripción',
     },
     '0iex13x2': {
-      'en': 'Create Budget',
+      'en': 'Create Bet',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
@@ -1743,12 +1701,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'Herzlich willkommen,',
       'es': 'Bienvenidos,',
     },
-    'v74pa882': {
-      'en': 'Andrew',
-      'ar': 'أندرو',
-      'de': 'Andreas',
-      'es': 'Andrés',
-    },
     'rzpg3cvh': {
       'en': 'Your latest updates are below.',
       'ar': 'آخر التحديثات الخاصة بك أدناه.',
@@ -2064,14 +2016,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // budget_DELETE
   {
     'pozov0xz': {
-      'en': 'Delete Budget',
+      'en': 'Delete Receipt',
       'ar': 'حذف الميزانية',
       'de': 'Budget löschen',
       'es': 'Eliminar presupuesto',
     },
     'aptjmof0': {
       'en':
-          'If you delete this budget, your transactions will no longer be associated with it.',
+          'If you delete this receipt, your transactions will no longer be associated with it.',
       'ar': 'إذا حذفت هذه الميزانية ، فلن تكون معاملاتك مرتبطة بها بعد الآن.',
       'de':
           'Wenn Sie dieses Budget löschen, sind Ihre Transaktionen nicht mehr damit verknüpft.',
@@ -2079,7 +2031,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Si elimina este presupuesto, sus transacciones ya no estarán asociadas a él.',
     },
     '9l7pbjcj': {
-      'en': 'Delete Budget',
+      'en': 'Delete Receipt',
       'ar': 'حذف الميزانية',
       'de': 'Budget löschen',
       'es': 'Eliminar presupuesto',
@@ -2197,6 +2149,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'tv2bj0wp': {
       'en': '.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // gdetails
+  {
+    'jkszpy2u': {
+      'en': 'Home',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // WebInterface
+  {
+    '689rwq8n': {
+      'en': 'Page Title',
       'ar': '',
       'de': '',
       'es': '',

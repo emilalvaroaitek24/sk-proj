@@ -76,6 +76,11 @@ class UsersRecord extends FirestoreRecord {
   int get allBetAmount => _allBetAmount ?? 0;
   bool hasAllBetAmount() => _allBetAmount != null;
 
+  // "owned_persona" field.
+  String? _ownedPersona;
+  String get ownedPersona => _ownedPersona ?? '';
+  bool hasOwnedPersona() => _ownedPersona != null;
+
   void _initializeFields() {
     _displayName = snapshotData['display_name'] as String?;
     _email = snapshotData['email'] as String?;
@@ -89,6 +94,7 @@ class UsersRecord extends FirestoreRecord {
     _userTitle = snapshotData['userTitle'] as String?;
     _totalBalance = castToType<int>(snapshotData['total_balance']);
     _allBetAmount = castToType<int>(snapshotData['all_bet_amount']);
+    _ownedPersona = snapshotData['owned_persona'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -137,6 +143,7 @@ Map<String, dynamic> createUsersRecordData({
   String? userTitle,
   int? totalBalance,
   int? allBetAmount,
+  String? ownedPersona,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -152,6 +159,7 @@ Map<String, dynamic> createUsersRecordData({
       'userTitle': userTitle,
       'total_balance': totalBalance,
       'all_bet_amount': allBetAmount,
+      'owned_persona': ownedPersona,
     }.withoutNulls,
   );
 
@@ -174,7 +182,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.createdTime == e2?.createdTime &&
         e1?.userTitle == e2?.userTitle &&
         e1?.totalBalance == e2?.totalBalance &&
-        e1?.allBetAmount == e2?.allBetAmount;
+        e1?.allBetAmount == e2?.allBetAmount &&
+        e1?.ownedPersona == e2?.ownedPersona;
   }
 
   @override
@@ -190,7 +199,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.createdTime,
         e?.userTitle,
         e?.totalBalance,
-        e?.allBetAmount
+        e?.allBetAmount,
+        e?.ownedPersona
       ]);
 
   @override

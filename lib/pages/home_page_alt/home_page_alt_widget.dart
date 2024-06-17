@@ -114,15 +114,20 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget>
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(2.0),
-                              child: Container(
-                                width: 60.0,
-                                height: 60.0,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Image.asset(
-                                  'assets/images/panyero_(3).png',
+                              child: AuthUserStreamWidget(
+                                builder: (context) => Container(
+                                  width: 60.0,
+                                  height: 60.0,
+                                  clipBehavior: Clip.antiAlias,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Image.network(
+                                    valueOrDefault<String>(
+                                      currentUserPhoto,
+                                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/panyero-main-qapkjt/assets/mbu9tu07hku6/Screenshot_from_2024-06-17_19-02-39.png',
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
@@ -161,24 +166,27 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget>
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'v74pa882' /* Andrew */,
+                                  child: AuthUserStreamWidget(
+                                    builder: (context) => Text(
+                                      valueOrDefault<String>(
+                                        currentUserDisplayName,
+                                        'Panyero',
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .headlineSmall
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .headlineSmallFamily,
+                                            color: FlutterFlowTheme.of(context)
+                                                .tertiary,
+                                            letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .headlineSmallFamily),
+                                          ),
                                     ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .headlineSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineSmallFamily,
-                                          color: FlutterFlowTheme.of(context)
-                                              .tertiary,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmallFamily),
-                                        ),
                                   ),
                                 ),
                               ],

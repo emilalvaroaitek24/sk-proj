@@ -39,7 +39,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       body: SafeArea(
         top: true,
         child: Column(
@@ -75,7 +75,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                 Expanded(
                   child: SizedBox(
                     width: double.infinity,
-                    height: MediaQuery.sizeOf(context).height * 0.65,
+                    height: MediaQuery.sizeOf(context).height * 0.538,
                     child: Stack(
                       children: [
                         Padding(
@@ -108,7 +108,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             width: MediaQuery.sizeOf(context)
                                                     .width *
                                                 0.7,
-                                            height: 300.0,
+                                            height: 280.0,
                                             fit: BoxFit.fitWidth,
                                           ),
                                         ),
@@ -124,7 +124,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'i8hl2uua' /* Create Budgets */,
+                                                'i8hl2uua' /* Create Bets */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -158,7 +158,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'hxtwax0y' /* Create budgets that you can ti... */,
+                                                'hxtwax0y' /* Create bets that you can tie t... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -443,7 +443,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         );
                       },
                       text: FFLocalizations.of(context).getText(
-                        'ypt7b97g' /* Create Your Budget */,
+                        'ypt7b97g' /* Create Your bets */,
                       ),
                       options: FFButtonOptions(
                         width: 200.0,
@@ -452,7 +452,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: FlutterFlowTheme.of(context).primaryText,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(

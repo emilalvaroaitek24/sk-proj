@@ -281,6 +281,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'Panyer')
               : const PanyerWidget(),
+        ),
+        FFRoute(
+          name: 'gdetails',
+          path: '/gdetails',
+          builder: (context, params) => const GdetailsWidget(),
+        ),
+        FFRoute(
+          name: 'WebInterface',
+          path: '/webInterface',
+          builder: (context, params) => WebInterfaceWidget(
+            videopreview: params.getParam(
+              'videopreview',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
