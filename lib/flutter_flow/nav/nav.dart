@@ -484,12 +484,12 @@ class FFRoute {
               ? isWeb
                   ? Container()
                   : Container(
-                      color: const Color(0xFBECE8DA),
+                      color: const Color(0xFFC2DFFF),
                       child: Center(
                         child: Image.asset(
-                          'assets/images/panyero_(3).png',
-                          width: 300.0,
-                          height: 300.0,
+                          'assets/images/panyero.gif',
+                          width: 250.0,
+                          height: 250.0,
                           fit: BoxFit.cover,
                         ),
                       ),
